@@ -1,0 +1,5 @@
+installRabbitMQ.sh
+Send/obj/*
+Receive/obj/*
+Send/bin/*
+Receive/bin/*
