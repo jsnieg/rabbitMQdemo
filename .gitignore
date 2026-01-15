@@ -1,5 +1,5 @@
-installRabbitMQ.sh
-Send/obj/*
-Receive/obj/*
-Send/bin/*
-Receive/bin/*
+# installRabbitMQ.sh
+# Send/obj/*
+# Receive/obj/*
+# Send/bin/*
+# Receive/bin/*
