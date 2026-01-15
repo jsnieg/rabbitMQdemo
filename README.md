@@ -23,15 +23,15 @@ After a while you should see `Sent Hello, World` on `Send` to `Receiver` and it 
 
 ## Work Queues
 
-`Shell 1:` run `cd Worker` -> `dotnet run`
+- `Shell 1:` run `cd Worker` -> `dotnet run`
 
-`Shell 2:` run `cd Worker` -> `dotnet run`
+- `Shell 2:` run `cd Worker` -> `dotnet run`
 
 Then...
 
-When running on `Shell 1` `cd NewTask` -> `dotnet run "First message.` This will appear on first worker.
+- When running on `Shell 1` `cd NewTask` -> `dotnet run "First message.` This will appear on first worker.
 
-When running on  `Shell 2` `cd NewTask` -> `dotnet run "Second message.` This will appear on first worker.
+- When running on  `Shell 2` `cd NewTask` -> `dotnet run "Second message.` This will appear on first worker.
 
 You can repeat it if you'd like to.
 
