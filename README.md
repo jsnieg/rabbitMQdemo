@@ -10,7 +10,7 @@ Demonstration of RabbitMQ as per docs on here -> https://www.rabbitmq.com/tutori
 
 - Installed C# with .NET Framework. This repository was worked on through WSL env.
 
-- Run `dotnet add package RabbitMQ.Client` in directory you wish to.
+- Run `dotnet add package RabbitMQ.Client` in directories you wish to.
 
 ## Usage
 

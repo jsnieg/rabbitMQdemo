@@ -13,6 +13,7 @@ using var channel = await connection.CreateChannelAsync();
 
 // Declare queue here as well, we might start the consumer before the publisher,
 // queue needs to exist before we try to consume messages from it.
+// If all workers are busy queue can fill up, add more workers or other strategy.
 await channel.QueueDeclareAsync(
     queue: "hello",
     durable: false,
@@ -20,6 +21,8 @@ await channel.QueueDeclareAsync(
     autoDelete: false,
     arguments: null
 );
+
+await channel.BasicQosAsync(prefetchSize: 0, prefetchCount: 1, global: false);
 
 Console.WriteLine(" [*] Waiting for messages...");
 
@@ -34,7 +37,7 @@ consumer.ReceivedAsync += async (model, ea) =>
     Console.WriteLine(" [x] Done");
 
     // here channel could also be accessed as ((AsyncEventingBasicConsumer)sender)
-    await channel.BasicAcksync(deliveryTag: ea.DeliveryTag, multiple: false);
+    await channel.BasicAckAsync(deliveryTag: ea.DeliveryTag, multiple: false);
 };
 
 await channel.BasicConsumeAsync(
