@@ -6,18 +6,31 @@ ConnectionFactory factory = new ConnectionFactory { HostName = "localhost" };
 using var connection = await factory.CreateConnectionAsync();
 using var channel = await connection.CreateChannelAsync();
 
+await channel.QueueDeclareAsync(
+    queue: "task_queue",
+    durable: true,
+    exclusive: false,
+    autoDelete: false,
+    arguments: null
+);
+
 // Declaring a queue is "idempotent (?)" - it will be created if it doesn't exist already.
 // Message is byte array
 var message = GetMessage(args);
 var body = Encoding.UTF8.GetBytes(message);
 
-await channel.QueueDeclareAsync(
-    queue: "hello",
-    durable: false,
-    exclusive: false,
-    autoDelete: false,
-    arguments: null
-);
+var properties = new BasicProperties
+{
+    Persistent = true
+};
+
+// await channel.QueueDeclareAsync(
+//     queue: "hello",
+//     durable: false,
+//     exclusive: false,
+//     autoDelete: false,
+//     arguments: null
+// );
 
 await channel.BasicPublishAsync(
     exchange: string.Empty,

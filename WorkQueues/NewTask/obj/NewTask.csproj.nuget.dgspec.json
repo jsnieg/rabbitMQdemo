@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/NewTask.csproj": {}
+    "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/NewTask.csproj": {}
   },
   "projects": {
-    "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/NewTask.csproj": {
+    "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/NewTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/NewTask.csproj",
+        "projectUniqueName": "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/NewTask.csproj",
         "projectName": "NewTask",
-        "projectPath": "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/NewTask.csproj",
+        "projectPath": "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/NewTask.csproj",
         "packagesPath": "/home/softkannik/.nuget/packages/",
-        "outputPath": "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/obj/",
+        "outputPath": "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/softkannik/.nuget/NuGet/NuGet.Config"

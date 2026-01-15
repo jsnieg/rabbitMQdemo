@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v/h0OkhfH5E=",
+  "dgSpecHash": "8aqy+N6V68c=",
   "success": true,
-  "projectFilePath": "/home/softkannik/dev/csharp/rabbitMQdemo/NewTask/NewTask.csproj",
+  "projectFilePath": "/home/softkannik/dev/csharp/rabbitMQdemo/WorkQueues/NewTask/NewTask.csproj",
   "expectedPackageFiles": [
     "/home/softkannik/.nuget/packages/rabbitmq.client/7.2.0/rabbitmq.client.7.2.0.nupkg.sha512",
     "/home/softkannik/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
